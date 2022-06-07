@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en-US">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Forca, o jogo</title>
+    <link href="main.css" rel="stylesheet">
+</head>
+
+<body>
+    <div id="home">
+        <div class="title">Forca</div>
+        <div class="button anim" onclick="iniciarJogo()">Jogar</div>
+    </div>
+    <div id="result" class="h">
+        <div class="title" id="rT"></div>
+        <div class="body" id="rM"></div>
+        <div class="button anim" onclick="iniciarJogo()">Jogar novamente?</div>
+    </div>
+    <div id="pGame">
+        <div id="letter"></div>
+        <div id="game">
+            <div class="player">
+                <div class="playerModel">
+                    <div class="head" data="false" id="g4"></div>
+                    <div class="body" data="false" l="false" r="false" id="g5"></div>
+                    <div class="foot" data="false" l="false" r="false" id="g6"></div>
+                </div>
+            </div>
+            <div class="stang3" data="false" id="g3"></div>
+            <div class="stang2" data="false" id="g2"></div>
+            <div class="stang" data="false" id="g1"></div>
+            <div class="ground" data="false" id="g0"></div>
+            <div class="hintButton" data="false" id="hintButton" onclick="dica()">?</div>
+        </div>
+        <div id="teclado">
+            <div id="moveKeybord">
+                <div class="marg"></div>
+            </div>
+            <div id="keybord"></div>
+        </div>
+        <div class="hint" id="hint">
+            <div class="title">Dica
+                <div class="exit" onclick="sairDica()">X</div>
+            </div>
+            <div class="body" id="hintText"></div>
+        </div>
+    </div>
+</body>
+<script src="main.js"></script>
+
+</html>
