@@ -215,10 +215,10 @@ function gameEnd(e) {
     d.setAttribute("data", e)
     if (e) {
         gId("rT").innerText = "Você venceu!"
-        gId("rM").innerHTML = "Parabéns você achou a palavra!<br/><br/>Bom trabalho!"
+        gId("rM").innerHTML = `Parabéns você achou a palavra!<br/><br/>Bom trabalho!<br/><br/><br/><br/><a href="https://forms.gle/64UZ8zWga7ngGstk8">feedback</a>`
     } else {
         gId("rT").innerText = "Você perdeu!"
-        gId("rM").innerHTML = "a palavra era<br/><br/>\"" + palavra[selecionar][0].toUpperCase() + "\"<br/><br/>mais sorte na próxima vez."
+        gId("rM").innerHTML = "a palavra era<br/><br/>\"" + palavra[selecionar][0].toUpperCase() + `\"<br/><br/></p>mais sorte na próxima vez.<br/><br/><a href="https://forms.gle/64UZ8zWga7ngGstk8">feedback</a>`
     }
     d.className = ""
 }
